@@ -4,7 +4,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, l
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level2`)
-    tiles.placeOnTile(mySprite, tiles.getTileLocation(2, 3))
+    tiles.placeOnTile(mySprite, tiles.getTileLocation(1, 8))
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     Render.jumpWithHeightAndDuration(mySprite, 100, 1000)
@@ -139,4 +139,3 @@ scene.setBackgroundImage(img`
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
     `)
 mySprite = Render.getRenderSpriteVariable()
-game.showLongText("hi dad/mom just press space and you'll find this new extension that i found have fun exploring!", DialogLayout.Full)
